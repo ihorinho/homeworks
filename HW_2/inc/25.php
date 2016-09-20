@@ -1,7 +1,7 @@
 <?php 
-echo"Hello"; echo", World!<br>";
+echo"Hello"; echo", World!<br>"; 
 ?>
 <hr
 <?=
-"Hello,";
+"Hello,"; //Це скорочений запис. Використовується, якщо треба зробити якийсь один вивід
 ?>

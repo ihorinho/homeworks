@@ -1,5 +1,4 @@
 <?php
-	include "1.php";
 	include "2.php";
 
 	if($myAge<0 || !is_numeric($myAge)) 
