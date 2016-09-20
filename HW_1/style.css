@@ -1,0 +1,113 @@
+/*General styles*/
+header, footer {
+	text-align: center;
+	background-color: #ffd700;
+}
+
+header, footer, .container {
+	border-left: 5px solid #ffd700;
+	border-right: 5px solid #ffd700;
+	width: 900px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.photo, .about{
+	float: left;
+}
+.social {
+	float: right;
+}
+/*---------------------------------------*/
+
+/*Icons*/
+.skype::before, 
+.email::before,
+.tel::before {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 0;
+}
+.tel::before {
+	bottom: 69px;
+	background: url(/images/sprite_tiny.png) no-repeat 9% 73%;
+}
+.email::before {
+	bottom: 39px;
+	background: url(/images/sprite_tiny.png) no-repeat 9% 3%;
+}
+.skype::before {
+	bottom: 9px;
+	background: url(/images/sprite_tiny.png) no-repeat 9% 26%;
+}
+/*--------------------------------------------------------*/
+
+/*"About" section*/
+.about {
+	position: relative;
+	font-size: 18px;		
+}
+.about h3{
+	margin: 20px 0 0;
+}
+.about ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.about li {
+	margin: 0 0 10px 35px;
+}
+/*--------------------------------*/
+
+/*Photo*/
+img {
+	width: 183px;
+	border-radius: 7px;
+	margin: 10px 30px 20px 20px;
+}
+/*-------------------------------*/
+
+/*Social networks*/
+.social{
+	margin-left: 50px;
+}
+.social img{
+	width: 50px;
+	margin: 0 10px 0 0;
+}
+/*-----------------------------------*/
+
+/*Table styles*/
+table {
+	clear: both;
+	border-collapse: collapse;
+	margin: 20px;
+}
+tr:nth-child(odd) td{
+	background-color: #d3d3d3;
+}
+td {
+	padding: 10px 20px;
+	font-size: 20px;
+}
+td:first-child:not(:last-child) {
+	text-align: center;
+	font-weight: bold;
+	width: 150px;
+}
+table ul {
+	padding: 0;
+	margin: 0 0 0 15px;
+}
+table ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+/*-----------------------------------*/
+
+
+
+
+
+

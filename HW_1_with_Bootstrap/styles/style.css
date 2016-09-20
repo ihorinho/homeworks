@@ -1,0 +1,135 @@
+/*General styles*/
+header div, footer div{
+	text-align: center;
+	background-color: #ffd700;
+}
+
+header h1, .about h3{
+	margin: 0;
+}
+
+.container {
+	border-left: 5px solid #ffd700;
+	border-right: 5px solid #ffd700;
+	padding: 15px 25px;
+}
+
+footer p {
+	margin-bottom: 0; 
+	padding: 5px;
+}
+/*-----------------------------------*/
+
+/*Photo*/
+.photo img {
+	margin: 10px 0 5px;
+}
+/*-------------------------------*/
+
+/*"About" section*/
+.about {
+	position: relative;
+	font-size: 18px;
+	margin-top: 15px;	
+}
+.about ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.about li {
+	margin: 0 0 10px 0px;
+}
+
+.about p {
+	border-bottom:  1px solid #aaa;
+	padding: 10px 0;
+	margin-bottom: 15px;
+}
+
+.about img {
+	width: 30px;
+	margin: 0 10px 0 0;
+}
+/*--------------------------------*/
+
+/*Social networks*/
+.social img{
+	width: 50px;
+	margin: 10px 0 0 0;
+}
+/*-----------------------------------*/
+
+/*Table styles*/
+table {
+	margin-top: 20px;
+}
+tr:nth-child(odd) td{
+	background-color: #d3d3d3;
+}
+.table>tbody>tr>td{
+	font-size: 16px;
+	vertical-align: middle;
+}
+td:first-child{
+	text-align: center;
+	font-weight: bold;
+	width: 150px;
+}
+table ul {
+	padding: 0;
+	margin: 0 0 0 15px;
+}
+table ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+/*-----------------------------------*/
+
+@media (min-width: 992px) {
+	.social {
+		text-align: right;
+	}
+}
+@media (max-width: 767px) { 
+	h3{
+		font-size: 32px;
+	}
+	.row div {
+		margin: 0 auto 20px;
+		float: none;
+		font-size: 28px;
+		text-align: center;
+	} 
+	.about img {
+		width: 40px;
+		margin: 0 15px 0 0;
+	}
+	.social img {
+		width: 70px;	
+	}		 
+}
+
+@media (max-width: 450px){
+	.photo{
+		width: 100%;
+	}
+	.about img{
+		margin: 0 0px 0 0;
+	}
+}
+
+@media (max-width: 380px){
+	.about img{
+		margin: 0 5px 0 0;
+		width: 30px;
+	}
+	.about li {
+		font-size: 22px;
+	}
+	.social img {
+		width: 52px;
+	}
+}
+
+
+
