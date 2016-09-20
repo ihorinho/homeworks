@@ -6,11 +6,15 @@ main {
 h1 {
 	text-align: center;
 }
+pre {
+	margin: 0;
+}
 .content {
 	margin-left: 20px;
 }
-pre {
-	margin: 0;
+footer {
+	text-align: center;
+	clear: both;
 }
 /*--------------------------------*/
 /*Main menu styles*/
