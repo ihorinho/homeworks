@@ -37,6 +37,7 @@
 					<pre>
 						<?php
 							$content = file("inc/$id.php");
+							echo "<p>&lt;&#063;&#112;&#104;&#112;</p>";
 							foreach ($content as $value) {
 								echo "<p>$value</p>";
 							}	
