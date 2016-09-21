@@ -1,6 +1,6 @@
 <?php
 	$id = "1";
-	$li_count = 26;
+	$li_count = 28;
 	if(isset($_GET["id"]))
 		$id = $_GET["id"];
 ?>
@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Домашка от 09_09</title>
+	<title>Домашка от 20_09</title>
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
 		?>
 		<!--Navigation-->	
 		<div class="content">
-			<h1>Задачі по основах PHP</h1>
+			<h1>Задачи по массивам и циклам</h1>
 		<table>
 			<tr>
 				<td class="task">

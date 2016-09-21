@@ -1,0 +1,69 @@
+/*General styles*/ 
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+}
+pre {
+	margin: 0;
+}
+.content {
+	margin-left: 20px;
+}
+footer {
+	text-align: center;
+	clear: both;
+}
+/*--------------------------------*/
+/*Main menu styles*/
+.nav {
+	float: left;
+	border: 1px solid black;
+	margin-right: 20px;
+}
+.nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav li:not(:last-child) {
+	border-bottom: 1px solid black;
+}
+.nav li a,.nav li a:hover{
+	padding: 5px 12px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.active {
+	background-color: #00e;
+}
+.active a {
+	color: #fff;
+}
+li:hover {
+	background-color: #ddd;
+}
+/*---------------------------------*/
+/*Table styles*/
+table{
+	border-collapse: collapse;
+	overflow: hidden;
+	margin: 0 auto;
+}
+td {
+	border: 1px solid black;
+	padding: 5px 10px;
+	tab-size: 25px;
+}
+td p {
+	margin: 1px 0;
+}
+td .task, td .result {
+	width: 30px;
+}
+/*---------------------------------*/
+
+
