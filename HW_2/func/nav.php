@@ -1,7 +1,13 @@
 <div class="nav">
 		<ul>
 			<li><a href="../index.php">На головну</a></li>
-			<li <?=$id==1 ? 'class="active"' : ''?>><a href="index.php?id=1">Завдання 1</a></li>
+			<?php	for($i = 1; $i <= 26; $i++){
+				echo "<li";
+				echo $id==$i ? ' class="active"' : '';
+				echo "><a href='index.php?id={$i}''>Завдання {$i}</a></li>";
+			}
+			?>
+			<!-- <li <?=$id==1 ? 'class="active"' : ''?>><a href="index.php?id=1">Завдання 1</a></li>
 			<li <?=$id==2 ? 'class="active"' : ''?>><a href="index.php?id=2">Завдання 2</a></li>
 			<li <?=$id==3 ? 'class="active"' : ''?>><a href="index.php?id=3">Завдання 3</a></li>
 			<li <?=$id==4 ? 'class="active"' : ''?>><a href="index.php?id=4">Завдання 4</a></li>
@@ -26,6 +32,6 @@
 			<li <?=$id==23? 'class="active"' : ''?>><a href="index.php?id=23">Завдання 23</a></li>
 			<li <?=$id==24? 'class="active"' : ''?>><a href="index.php?id=24">Завдання 24</a></li>
 			<li <?=$id==25? 'class="active"' : ''?>><a href="index.php?id=25">Завдання 25</a></li>
-			<li <?=$id==26? 'class="active"' : ''?>><a href="index.php?id=26">Завдання 26</a></li>
+			<li <?=$id==26? 'class="active"' : ''?>><a href="index.php?id=26">Завдання 26</a></li> -->
 		</ul>
 	</div>
