@@ -3,7 +3,6 @@ header, footer {
 	text-align: center;
 	background-color: #ffd700;
 }
-
 header, footer, .container {
 	border-left: 5px solid #ffd700;
 	border-right: 5px solid #ffd700;
@@ -47,7 +46,6 @@ header a {
 	background: url(images/sprite_tiny.png) no-repeat 9% 26%;
 }
 /*--------------------------------------------------------*/
-
 /*"About" section*/
 .about {
 	position: relative;
@@ -65,7 +63,6 @@ header a {
 	margin: 0 0 10px 35px;
 }
 /*--------------------------------*/
-
 /*Photo*/
 img {
 	width: 183px;
@@ -73,7 +70,6 @@ img {
 	margin: 10px 30px 20px 20px;
 }
 /*-------------------------------*/
-
 /*Social networks*/
 .social{
 	margin-left: 50px;
@@ -83,7 +79,6 @@ img {
 	margin: 0 10px 0 0;
 }
 /*-----------------------------------*/
-
 /*Table styles*/
 table {
 	clear: both;

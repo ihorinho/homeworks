@@ -9,7 +9,6 @@
 	<header>
 		<a href="../index.php">Back to HomeWorks</a>
 		<h1>Junior PHP Developer</h1>
-
 	</header>
 	<main>
 		<div class="container">

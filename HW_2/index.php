@@ -1,9 +1,7 @@
 <?php
-	$id = "";
+	$id = "1";
 	if(isset($_GET["id"]))
 		$id = $_GET["id"];
-	else
-		$id = "default";
 ?>
 <!DOCTYPE html>
 <html lang="en">

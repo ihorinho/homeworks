@@ -1,6 +1,6 @@
 <div class="nav">
 		<ul>
-			<li <?=$id=="default" ? 'class="active"' : ''?>><a href="index.php">Головна сторінка</a></li>
+			<li><a href="../index.php">На головну</a></li>
 			<li <?=$id==1 ? 'class="active"' : ''?>><a href="index.php?id=1">Завдання 1</a></li>
 			<li <?=$id==2 ? 'class="active"' : ''?>><a href="index.php?id=2">Завдання 2</a></li>
 			<li <?=$id==3 ? 'class="active"' : ''?>><a href="index.php?id=3">Завдання 3</a></li>
