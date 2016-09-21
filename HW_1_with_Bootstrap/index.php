@@ -15,6 +15,7 @@
 <body>
 	<header>
 		<div class="container">
+			<a href="../index.php">Back</a>
 			<h1>Junior PHP Developer</h1>
 		</div>
 	</header>
@@ -22,7 +23,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6 col-sm-4 col-md-3 photo">
-					<img src="/images/avatar.jpg" alt="My photo" class="img-rounded img-responsive photo " width="100%">
+					<img src="images/avatar.jpg" alt="My photo" class="img-rounded img-responsive photo " width="100%">
 				</div>
 
 				<div class="col-xs-12 col-sm-6 col-md-5 about">
@@ -30,22 +31,22 @@
 					<p>20 січня 1990 р.</p>
 					<ul> 
 						<li class="tel">
-							<img src="/images/phone_50.png">066-632-17-71
+							<img src="images/phone_50.png">066-632-17-71
 							</li>
 						<li class="email">
-							<img src="/images/message_50.png">ihorinho@gmail.com
+							<img src="images/message_50.png">ihorinho@gmail.com
 						</li>
 						<li class="skype">
-							<img src="/images/skype_50.png">ihorinho
+							<img src="images/skype_50.png">ihorinho
 						</li>
 					</ul>
 				</div>
 
 				<div class="col-xs-12 col-sm-2 col-md-4 social">
-					<a href="https://vk.com/ihorinho"><img src="/images/vk.png" alt="vkontakte logo"></a>
-					<a href="https://www.facebook.com/profile.php?id=100006651168809"><img src="/images/fb.png" alt="facebook logo"></a>
-					<a href="https://twitter.com/ihorinho"><img src="/images/tt.png" alt="twitter logo"></a>
-					<a href="https://plus.google.com/u/0/107218877659342969829"><img src="/images/gg.png" alt="google+ logo"></a>
+					<a href="https://vk.com/ihorinho"><img src="images/vk.png" alt="vkontakte logo"></a>
+					<a href="https://www.facebook.com/profile.php?id=100006651168809"><img src="images/fb.png" alt="facebook logo"></a>
+					<a href="https://twitter.com/ihorinho"><img src="images/tt.png" alt="twitter logo"></a>
+					<a href="https://plus.google.com/u/0/107218877659342969829"><img src="images/gg.png" alt="google+ logo"></a>
 				</div>
 			</div>
 		

@@ -7,12 +7,14 @@
 </head>
 <body>
 	<header>
-			<h1>Junior PHP Developer</h1>
+		<a href="../index.php">Back to HomeWorks</a>
+		<h1>Junior PHP Developer</h1>
+
 	</header>
 	<main>
 		<div class="container">
 			<div class="photo">
-				<img src="/images/avatar.jpg" alt="My photo">
+				<img src="images/avatar.jpg" alt="My photo">
 			</div>
 			<div class="about">
 				<h3>Пелехатий Ігор Степанович</h3>
@@ -24,9 +26,9 @@
 				</ul>
 			</div>
 			<div class="social">
-				<a href="https://vk.com/ihorinho"><img src="/images/vk.png" alt="vkontakte logo"></a>
-				<a href="https://www.facebook.com/profile.php?id=100006651168809"><img src="/images/fb.png" alt="facebook logo"></a>
-				<a href="https://twitter.com/ihorinho"><img src="/images/tt.png" alt="twitter logo"></a>
+				<a href="https://vk.com/ihorinho"><img src="images/vk.png" alt="vkontakte logo"></a>
+				<a href="https://www.facebook.com/profile.php?id=100006651168809"><img src="images/fb.png" alt="facebook logo"></a>
+				<a href="https://twitter.com/ihorinho"><img src="images/tt.png" alt="twitter logo"></a>
 			</div>
 			<table>
 				<tr>

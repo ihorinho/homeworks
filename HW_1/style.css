@@ -18,7 +18,12 @@ header, footer, .container {
 	float: right;
 }
 /*---------------------------------------*/
-
+/*Header*/
+header a {
+	float: right;
+	position: relative;
+}
+/*----------------------------------------*/
 /*Icons*/
 .skype::before, 
 .email::before,
@@ -31,15 +36,15 @@ header, footer, .container {
 }
 .tel::before {
 	bottom: 69px;
-	background: url(/images/sprite_tiny.png) no-repeat 9% 73%;
+	background: url(images/sprite_tiny.png) no-repeat 9% 73%;
 }
 .email::before {
 	bottom: 39px;
-	background: url(/images/sprite_tiny.png) no-repeat 9% 3%;
+	background: url(images/sprite_tiny.png) no-repeat 9% 3%;
 }
 .skype::before {
 	bottom: 9px;
-	background: url(/images/sprite_tiny.png) no-repeat 9% 26%;
+	background: url(images/sprite_tiny.png) no-repeat 9% 26%;
 }
 /*--------------------------------------------------------*/
 
