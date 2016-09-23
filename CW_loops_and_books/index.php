@@ -70,6 +70,9 @@ $books = array($book1, $book2, $book3, $book4, $book5, $book6, $book7);
         .table {
             clear: both;
         }
+        table td {
+            width: 20px;
+        }
         .price {
             position: absolute;
             bottom: 5px;
@@ -100,14 +103,12 @@ $books = array($book1, $book2, $book3, $book4, $book5, $book6, $book7);
         <?php
         $numbers = 10;
         echo "<table border=1>";
-        for($i = 1; $i <= $numbers; $i++){
+        for($i = 1; $i < $numbers; $i++){
             echo "<tr>";
-            for ($j = 1; $j <= $numbers; $j++) { 
+            for ($j = 1; $j < $numbers; $j++) { 
                 $product = $i * $j;
-                if($product % 2 == 0)
-                    echo "<td align = center style='background-color: #ffb90f'> $product </td>";
-                else
-                    echo "<td align = center style='background-color: #0ff'> $product </td>";
+				$bg_color = $product % 2 ? '#0ff' : '#ffb90f';
+                echo "<td align = center style='background-color: {$bg_color}'> $product </td>";     
             }
             echo "</tr>";
         }

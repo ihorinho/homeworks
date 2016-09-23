@@ -35,10 +35,11 @@
 				<td colspan="2">
 					<pre>
 						<?php
-							$content = file("inc/$id.php");
-							echo "<p>&lt;&#063;&#112;&#104;&#112;</p>";
+							$content = file("inc/$id.php");							
 							foreach ($content as $value) {
-								echo "<p>$value</p>";
+								//Перетворимо спец. символи в html-теги
+								$string = htmlspecialchars($value, ENT_QUOTES);
+								echo "<p>$string</p>";
 							}	
 						?>
 					</pre>	

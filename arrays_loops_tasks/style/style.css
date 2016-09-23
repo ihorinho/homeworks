@@ -37,13 +37,13 @@ footer {
 	text-decoration: none;
 	color: black;
 }
-.active {
+.nav .active {
 	background-color: #00e;
 }
-.active a {
+.nav .active a {
 	color: #fff;
 }
-li:hover {
+.nav li:hover {
 	background-color: #ddd;
 }
 /*---------------------------------*/
