@@ -3,10 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My HomeWorks</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<main>
 		<div class="content">
+			<div class="about">
+				<h2>HomeWorks</h2>
+				<p>Igor</p>
+				<p>Pelekhatyy</p>
+			</div>
 			<nav>
 				<li><a href="HW_1_resume/index.php">Домашка №1 Резюме</a></li>
 				<li><a href="HW_1_resume_with_Bootstrap/index.php">Домашка №1 Резюме (з Bootstrap)</a></li>
