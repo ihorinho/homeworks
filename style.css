@@ -31,7 +31,8 @@ nav li  a{
 nav li a:hover{
 	border: 1px solid #aaa;
 	border-radius: 5px;
-	background-color: #dcdcdc; 
-	color: #1c1c1c;
-	box-shadow: 2px 2px 4px #aaa;
+	background-color: rgba(220, 220, 220, 0.3); /*#dcdcdc*/
+	color: #fff;
+	/*color: #1c1c1c;*/
+	box-shadow: 2px 2px 4px #aaa; 
 }
