@@ -1,5 +1,6 @@
 <div class="nav">
 		<ul>
+			<li><a href="../../index.php?id=4">Назад</a></li>
 			<li><a href="../../index.php">На головну</a></li>
 			<?php	foreach ($li_arr as $key => $value) {
 				echo "<li";
