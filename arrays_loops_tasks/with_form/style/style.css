@@ -14,7 +14,8 @@ pre {
 	margin: 0;
 }
 .content {
-	margin-left: 20px;
+	width: 80%;
+	float: left;
 }
 footer {
 	clear: both;
@@ -24,7 +25,7 @@ footer {
 .nav {
 	float: left;
 	border: 1px solid black;
-	margin-right: 20px;
+	margin: 40px 20px 0 0;
 }
 .nav ul {
 	padding: 0;

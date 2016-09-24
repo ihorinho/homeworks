@@ -45,11 +45,9 @@
 		</div>
 	</main>
 	<footer>
-		<div class="content">
-			<p>
-				Copyright &copy; 2016 Igor Pelekhatyy
-			</p>
-		</div>
+		<p>
+			Copyright &copy; 2016 Igor Pelekhatyy
+		</p>
 	</footer>
 </body>
 </html>
