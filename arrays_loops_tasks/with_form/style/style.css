@@ -61,7 +61,7 @@ table{
 }
 td {
 	border: 1px solid black;
-	padding: 5px 10px;
+	padding: 5px 15px;
 	tab-size: 25px;
 }
 td p {
@@ -88,11 +88,16 @@ form legend {
 form label {
 	font-size: 18px;
 }
-form input {
+form input, form textarea {
 	padding: 2px;
 	display: block;
 	margin: 10px 0;
 	font-size: 22px;
+}
+form textarea {
+	font-size: 16px;
+	margin: 10px auto;
+	width: 95%;
 }
 form button {
 	font-size: 20px;
