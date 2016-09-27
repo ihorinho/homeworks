@@ -1,5 +1,5 @@
 <?php
-	$li_arr = [15,17,20,23,24,25,26,27,28,"mono","braces"];
+	$li_arr = [15,17,20,23,24,25,26,27,28,"mono","braces","calc"];
 	$id = reset($li_arr);
 	if(isset($_GET["id"]))
 		$id = $_GET["id"];
