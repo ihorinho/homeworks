@@ -7,22 +7,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	if(($operator=="/" || $operator=="%") && $b == 0) 
 		die("На 0 ділити не можна");
-	echo "Result => ";
 	switch ($operator) {
 		case '+':
-			echo $a + $b;
+			echo "$a + $b = ".($a + $b);
 			break;
 		case '-':
-			echo $a - $b;
+			echo "$a - $b = ".($a - $b);
 			break;
 		case '*':
-			echo $a * $b;
+			echo "$a * $b = ".($a * $b);
 			break;
 		case '/':
-			echo number_format($a / $b, 2);
+			echo "$a / $b = ".number_format($a / $b, 2);
 			break;
 		case '%':
-			echo $a % $b;
+			echo "Остаток від ділення $a  / $b = ".$a % $b;
 			break;
 		
 		default:

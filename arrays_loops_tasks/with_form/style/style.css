@@ -88,7 +88,9 @@ form legend {
 form label {
 	font-size: 18px;
 }
-form input, form textarea {
+form input,
+form textarea,
+form select {
 	padding: 2px;
 	display: block;
 	margin: 10px 0;
