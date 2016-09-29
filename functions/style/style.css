@@ -1,0 +1,113 @@
+/*General styles*/ 
+body{
+	background: url("../bg.jpg") fixed;
+}
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+h1, footer {
+	text-align: center;
+	color: #f5f5f5;
+}
+pre {
+	margin: 0;
+}
+.content {
+	width: 80%;
+	float: left;
+}
+footer {
+	clear: both;
+}
+/*--------------------------------*/
+/*Main menu styles*/
+.nav {
+	float: left;
+	border: 1px solid black;
+	margin: 40px 20px 0 0;
+}
+.nav ul {
+	padding: 0;
+	margin: 0;
+	background: #fffff8;
+	list-style: none;
+}
+.nav li:not(:last-child) {
+	border-bottom: 1px solid black;
+}
+.nav li a,.nav li a:hover{
+	padding: 5px 12px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.nav .active {
+	background-color: #00e;
+}
+.nav .active a {
+	color: #fff;
+}
+.nav li:hover {
+	background-color: #cdcdcd;
+}
+/*---------------------------------*/
+/*Table styles*/
+table{
+	border-collapse: collapse;
+	background: #fffff8;
+	overflow: hidden;
+	margin: 0 auto;
+}
+td {
+	border: 1px solid black;
+	padding: 5px 15px;
+	tab-size: 25px;
+}
+td p {
+	margin: 1px 0;
+}
+td .task, td .result {
+	width: 30px;
+}
+/*---------------------------------*/
+/*Form styles*/
+form{
+	width: 460px;
+	min-height: 200px;
+	margin: 20px auto;
+	padding: 0 20px 15px;
+	border: 1px solid gold;
+	background: rgba(255, 255, 200, 0.4);
+}
+form legend {
+	padding: 5px;
+	font-size: 20px;
+	margin: 0 auto 10px;
+}
+form label {
+	font-size: 18px;
+}
+form input,
+form textarea,
+form select {
+	padding: 2px;
+	display: block;
+	margin: 10px 0;
+	font-size: 22px;
+}
+form textarea {
+	font-size: 16px;
+	margin: 10px auto;
+	width: 95%;
+}
+form button {
+	font-size: 20px;
+	min-width: 80px;
+}
+form button:hover {
+	background-color: #00FA9A;
+	cursor: pointer;
+}
+/*---------------------------------*/
+
