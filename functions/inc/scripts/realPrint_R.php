@@ -18,7 +18,7 @@ function realPrint_R($data, $tab_size = 1) {
 		echo "Array\n{$brace_tab}{$brace_tab}(\n";
 		foreach($data as $key => $value){
 			echo "{$tab}{$brace_tab}[{$key}] => ";
-			//Викликаємо функію рекурсивно
+			//Викликаємо функцію рекурсивно
 			//Якщо слідуючий елемент масиву - не масив, то не збільшуємо відступ
 			//Якщо слідуючий елемент масиву теж масив, то збільшуємо відступ
 			if(is_array($value))

@@ -5,6 +5,8 @@ echo "<pre>";
 print_r($array);
 
 function maxTomin(&$arr){
+	$key_min = 0;
+	$key_max = 0;
 	$min = $arr[0];
 	$max = $arr[0];
 	//Знаходимо найбільше і найменше значення
