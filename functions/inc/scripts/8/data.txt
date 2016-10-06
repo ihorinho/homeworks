@@ -1,0 +1,2 @@
+a:4:{s:8:"username";s:6:"hacker";s:5:"email";s:19:"hack@everrybody.com";s:7:"message";s:22:"strip_tags($data, "");";s:4:"date";s:22:"06-10-2016 о 23:53:32";}
+a:4:{s:8:"username";s:8:"ihorinho";s:5:"email";s:18:"ihorinho@gmail.com";s:7:"message";s:17:"<b>**** you!</b> ";s:4:"date";s:22:"06-10-2016 о 23:55:18";}

@@ -1,0 +1,1 @@
+a:4:{s:8:"username";s:8:"Nicholas";s:5:"email";s:13:"niko@mail.com";s:7:"message";s:14:"Hi, everybody!";s:4:"date";s:22:"06-10-2016 о 23:28:28";}
