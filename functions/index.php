@@ -1,5 +1,5 @@
 <?php
-	$li_arr = [1,2,3,4,5,9,10,11,12,13,"realPrint_R","countChars","writeLine","for23","maxTomin"];
+	$li_arr = [1,2,3,4,5,6,9,10,11,12,13,"realPrint_R","countChars","writeLine","for23","maxTomin"];
 	$id = reset($li_arr);
 	if(isset($_GET["id"]))
 		$id = $_GET["id"];

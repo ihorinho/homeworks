@@ -16,7 +16,7 @@ function getCommonWords($a, $b) {
 }
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$text1 = post("text1");
-	$text2 = post("text2");	
+	$text2 = post("text2");
 	echo "<pre>";
 	print_r(getCommonWords($text1, $text2));
 	echo "</pre>";
