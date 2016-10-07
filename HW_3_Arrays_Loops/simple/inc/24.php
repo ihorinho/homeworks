@@ -10,9 +10,11 @@ else {
 		 if ($string[$i] == $my_num) 
 		 	$count++;
 	}
-	if(!$count) 
+	if(!$count) {
 		echo "Число $my_num жодного разу не входить в число $number";
-	else
+	}
+	else{
 		echo "Число $my_num входить $count разів в число $number";
+	}
 }
 ?>

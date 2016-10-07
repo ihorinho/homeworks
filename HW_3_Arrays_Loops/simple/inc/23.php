@@ -1,7 +1,8 @@
 <?php
 $number = 12345;
-if(!is_numeric($number))
+if(!is_numeric($number)){
 	exit("Ви ввели не число! - $number");
+}
 else {
 	$string = (string)$number;
 	$result = 0;
