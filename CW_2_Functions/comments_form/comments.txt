@@ -1,0 +1,2 @@
+a:5:{s:8:"username";s:8:"ihorinho";s:5:"email";s:18:"ihorinho@gmail.com";s:7:"message";s:22:"Привіт всім!";s:2:"id";s:13:"57fa2cf0ce787";s:8:"datetime";s:19:"2016-10-09 13:41:36";}
+a:5:{s:8:"username";s:13:"infinitysasha";s:5:"email";s:24:"oleksandrovsky@gmail.com";s:7:"message";s:12:"Ciao, tutti!";s:2:"id";s:13:"57fa2dcd1c222";s:8:"datetime";s:19:"2016-10-09 13:45:17";}
