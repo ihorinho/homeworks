@@ -1,3 +1,4 @@
+<!--todo Use Bootstrap-->
 <!doctype html>
 <html>
 <head>
@@ -28,8 +29,12 @@
 <hr>
 <div>
     <?php foreach ($comments as $comment) : ?>
-        <b><?=$comment['username']?></b> <?=$comment['datetime']?> - 0 +/-<br>
-        <?=$comment['message']?><br><a href="?id=<?=$comment["id"]?>">Видалити повідомлення</a>
+        <b><?=$comment['username']?></b> <?=$comment['datetime'] . " Рейтинг: " . $comment['rating'] . " "?>
+        
+        <a href="?action=update_rating&rating=increase&id=<?=$comment["id"]?>">+</a>/
+        <a href="?action=update_rating&rating=decrease&id=<?=$comment["id"]?>">-</a><br>
+        <?php echo isset($comment['publish']) ? "<i> e-mail: " . $comment['email'] . "</i><br>" : null  ?>
+        <?=$comment['message']?><br><a href="?action=delete&id=<?=$comment["id"]?>">Видалити повідомлення</a>
         <br><br>
     <?php endforeach;?>
 
