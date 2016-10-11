@@ -1,5 +1,0 @@
-a:5:{s:8:"username";s:8:"ihorinho";s:5:"email";s:18:"ihorinho@gmail.com";s:7:"message";s:22:"Привіт всім!";s:2:"id";s:13:"57fa2cf0ce787";s:8:"datetime";s:19:"2016-10-09 13:41:36";}
-a:5:{s:8:"username";s:8:"Nicholas";s:5:"email";s:13:"niko@mail.com";s:7:"message";s:13:"Hi, everyone!";s:2:"id";s:13:"57fa4745b3650";s:8:"datetime";s:19:"2016-10-09 15:33:57";}
-a:5:{s:8:"username";s:5:"sahas";s:5:"email";s:23:"infinitisasha@gmail.com";s:7:"message";s:12:"Ciao, tutti!";s:2:"id";s:13:"57fa4769a3098";s:8:"datetime";s:19:"2016-10-09 15:34:33";}
-a:6:{s:8:"username";s:8:"ihorinho";s:5:"email";s:13:"niko@mail.com";s:7:"message";s:10:"qthw4thw4h";s:7:"publish";s:2:"on";s:2:"id";s:13:"57fa4abe0e1c8";s:8:"datetime";s:19:"2016-10-09 15:48:46";}
-a:5:{s:8:"username";s:8:"ihorinho";s:5:"email";s:18:"ihorinho@gmail.com";s:7:"message";s:14:"w4hynmteyjej5j";s:2:"id";s:13:"57fa4ac8619b8";s:8:"datetime";s:19:"2016-10-09 15:48:56";}

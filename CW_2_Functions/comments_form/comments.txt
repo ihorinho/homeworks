@@ -1,8 +1,6 @@
-{"username":"Nicholas","email":"ihorinho@gmail.com","message":"beach smuck","id":"57fc944a6c854","datetime":"2016-10-11 09:27:06","rating":0}
-{"username":"ihorinho","email":"ihorinho@gmail.com","message":"hello, smuck my as beaches","id":"57fc9723e2964","datetime":"2016-10-11 09:39:15","rating":-2}
-{"username":"ihorinho","email":"ihorinho@gmail.com","message":"Hi, bicthes, shut the fuck up and smuck my ass. You all are assholes and bastards","id":"57fc9bacc22a4","datetime":"2016-10-11 09:58:36","rating":2}
 {"username":"Nicholas","email":"niko@mail.com","message":"ihorinho is a fucking dirk!!!","id":"57fc9bff0c544","datetime":"2016-10-11 09:59:59","rating":2}
 {"username":"sahas","email":"ihorinho@ukr.net","message":"Shut the fuck up!!!","id":"57fc9c1c0814c","datetime":"2016-10-11 10:00:28","rating":0}
-{"username":"ihorinho","email":"ihorinho@gmail.com","message":"rhbwrbw fuck dirk ass","publish":"on","id":"57fc9c6f9d404","datetime":"2016-10-11 10:01:51","rating":0}
 {"username":"ihorinho","email":"ihorinho@gmail.com","message":"Shut the fuck up!!!","id":"57fc9d11148e8","datetime":"2016-10-11 10:04:33","rating":0}
 {"username":"sahas","email":"380664484604@net.com","message":"Hi!","publish":"on","id":"57fcb3550d674","datetime":"2016-10-11 11:39:33","rating":0}
+{"username":"ihorinho","email":"ihorinho@gmail.com","message":"Hello, fucking assholes!","publish":"on","id":"57fcb4e925e40","datetime":"2016-10-11 11:46:17","rating":0}
+{"username":"Andrew","email":"andron@ho.ua","message":"This is the last comment.","publish":"on","id":"57fcbeeb285b4","datetime":"2016-10-11 12:28:59","rating":0}

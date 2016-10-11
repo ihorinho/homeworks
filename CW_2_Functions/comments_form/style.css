@@ -1,0 +1,13 @@
+body {
+    padding-left: 20px;
+}
+.container {
+    width: 400px;
+    margin-left: 0;
+    padding-top: 5px;
+    border: 1px solid cornflowerblue;
+    border-radius: 3px;
+}
+.comments{
+    margin-left: 10px;
+}
