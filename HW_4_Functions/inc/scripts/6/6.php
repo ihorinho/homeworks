@@ -14,7 +14,7 @@ function moveToDirectory($input_name, $directory){
 </head>
 <body>
 <?php
-//todo-important multiple downloads
+//todo-imp multiple downloads
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if(!empty($_FILES)) {
             moveToDirectory("picture", "gallery/");
