@@ -13,6 +13,8 @@
     <li><a href="myCount2.php">count() через each() + while</a></li>
     <li><a href="myPrint_R.php">print_r() через each()</a></li>
     <li><a href="myPrint_R2.php">print_r() через each() + while</a></li>
+    <li><a href="symmetric_numbers.php">Перевірка числа на симетричність</a></li>
+    <li><a href="rand_array.php">Функція для сворення рандомного масиву</a></li>
 </ul>
 <body>
 
