@@ -1,9 +1,4 @@
 <?php
-//todo-done: кнопка для видалення коментаріїв
-//todo-done: Рейтинг повідомлень
-//todo-done: Розмітку перенести в layout.php
-//todo-done: Try to use json_encode/json_decode instead of serialize
-//TODO-DONE Checkbox to publish e-mail
 function dd($a)
 {
 	echo '<pre>';
@@ -52,12 +47,10 @@ function loadComments($file = COMMENTS_DB)
 }
 
 function moderate(array &$comments){
-	// todo-done use array_walk() instead of foreach
-	// todo-done: as -> **, beach -> b***h
     array_walk($comments, function(&$item){
         $badWords = ['ass', 'asshole', 'bitch', 'smack', 'fuck', 'shit', 'bastard', 'dirk'];
         $replace_badWords = ['a*s', 'a*****e','b***h', 's***k', 'f**k', 's**t', "b*****d", "d**k"];
-        $item['message'] = str_replace($badWords, $replace_badWords, $item['message']);
+        $item['message'] = str_ireplace($badWords, $replace_badWords, $item['message']);
     });
 }
 //Функція для зміни рейтингу повідомлень
