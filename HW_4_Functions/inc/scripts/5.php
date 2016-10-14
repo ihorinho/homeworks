@@ -6,7 +6,7 @@ function getFilespattern($path, $name){
 	}
 	$dir = opendir($path);
 	echo "<ul>";
-	while($fname = readdir($dir)){
+	while(false !==($fname = readdir($dir))){
 		if(is_file(__DIR__."/".$fname) && preg_match("/{$name}/i", $fname)){
 			echo $fname."<br/>";
 		}

@@ -1,5 +1,4 @@
 <?php
-#//todo-imp оновити readme
 	$nav = "main.php";
 	if(isset($_GET["id"]))
 		$nav = "loops.php"

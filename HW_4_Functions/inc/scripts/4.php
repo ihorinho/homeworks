@@ -6,7 +6,7 @@ function getFileslist($path){
 	}
 	$dir = opendir($path);
 	echo "<ul>";
-	while($fname = readdir($dir)){
+	while(false !==($fname = readdir($dir))){
 		if(is_file(__DIR__."/".$fname)){
 			echo "<li>{$fname}</li>";
 		}

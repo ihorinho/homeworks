@@ -18,7 +18,7 @@ function get($key, $default = null)
 
 function requestIsPost()
 {
-	return (bool)$_POST;
+	return (bool)($_SERVER['REQUEST_METHOD'] == 'POST');
 }
 
 function formIsValid()
@@ -28,12 +28,8 @@ function formIsValid()
 			post('message') != '';
 }
 
-function redirect($to)
-{
-	header('Location: ' . $to);
-	die;
-}
 
+//Завантаження коментаріїв
 function loadComments($file = COMMENTS_DB)
 {
 	$commentsRaw = file($file);
@@ -41,11 +37,10 @@ function loadComments($file = COMMENTS_DB)
 
 	foreach ($commentsRaw as $comment) {
 	$comments[] = json_decode($comment, true);
-
 	}
 	return $comments;
 }
-
+//Антимат
 function moderate(array &$comments){
     array_walk($comments, function(&$item){
         $badWords = ['ass', 'asshole', 'bitch', 'smack', 'fuck', 'shit', 'bastard', 'dirk'];

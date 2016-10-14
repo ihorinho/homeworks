@@ -5,10 +5,10 @@ function post($key){
 
 function get3Longest($text){
 	//Розбиваємо строку в масив по-слівно 
-	$arr = array_unique(preg_split("/[\s,.:;]+/", $text));
+	$arr = preg_split("/[\s,.:;]+/", $text);
 	// сортуємо масив по спаданні залежно від довжини слова
 	usort($arr, function ($a, $b) {
-		return strlen($a) > strlen($b) ? -1 : 1;
+		return mb_strlen($a) > mb_strlen($b) ? -1 : 1;
 	});
 	//виводимо результат
 	for($i = 0; $i < 3; $i++){

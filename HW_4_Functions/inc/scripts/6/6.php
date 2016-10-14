@@ -1,43 +1,41 @@
 <?php
-function moveToDirectory($input_name, $directory){
-    $picture_name = basename($_FILES[$input_name]["name"]);
-    $destination = $directory . $picture_name;
-    move_uploaded_file($_FILES[$input_name]["tmp_name"], $destination);
+function redirect($to){
+    header("Location: $to");
 }
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Task 6 - Add pictures to gallery</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<?php
-//todo-imp multiple downloads
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if(!empty($_FILES)) {
-            moveToDirectory("picture", "gallery/");
+
+function reStructFiles(array $array){
+    foreach($array as $key => $value_arr){
+        foreach($value_arr as $index => $value){
+            $rearr[$index][$key] = $value;
         }
     }
-?>
-<h1>Gallery</h1>
-<form action="<?= $_SERVER["PHP_SELF"] ?>" method="post" enctype="multipart/form-data">
-    <p>Upload pictures</p>
-    <label for="picture">Загрузити більше картинок...</label>
-    <input type="file" id="picture" name="picture" multiple><br>
-    <button type="submit">Завантажити!</button>
-</form>
-<table class="gallery-content">
-    <?php
-        $dir = opendir("gallery");
-        while ($picture = readdir($dir)):
-             if (is_file("gallery/" . $picture)):
-    ?>
-        <tr class="gallery-item">
-            <td><img src="<?= "gallery/" . $picture ?>" alt="Тут має бути <?= $picture ?>"></td>
-        </tr>
-     <?php ENDIF; ENDWHILE; ?>
-</table>
-</body>
-</html>
+    return $rearr;
+}
+
+function moveToDirectory($file, $directory){
+    $picture_name = basename($file["name"]);
+    $destination = $directory . $picture_name;
+    move_uploaded_file($file["tmp_name"], $destination);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $error = false;
+    $files = $_FILES;
+    $files = reStructFiles($files['picture']);
+    foreach($files as $value){
+        if($value['error'] !== 0){
+            $error = $error || 1;
+            continue;
+        }
+        moveToDirectory($value, "gallery/");
+    }
+    if(!$error){
+        redirect("?msg=Successfully uploaded");
+    }
+    else {
+        redirect("?msg=Errors%20were%20found");
+    }
+}
+//-----------------HTML Layout
+require_once "layout.php";
+//-----------------HTML Layout
