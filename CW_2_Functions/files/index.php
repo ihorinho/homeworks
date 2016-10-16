@@ -2,7 +2,7 @@
 //todo-done: Flash messages for all actions
 //todo-done: Safe delete image
 //todo-done: Images with titles
-//todo: Albums with images
+//todo-done: Albums with images
 //todo-done: popular types of images
 //todo-done: обмеження на розмір(динамічне)
 //todo-DONE: Зменшити/збільшити динамічно картинку
@@ -13,12 +13,14 @@ define('PICTURE_WIDTH', '250px');
 define("MAX_FILE_SIZE", 1512000);
 define("ERRORS_FILE", 'errors.txt');
 define("TITLES_FILE", 'titles.txt');
+define("ALBUMS_FILE",'albums.txt');
+//Підключаємо файл з функціями
 require_once 'functions.php';
 
 if (!file_exists('uploads')) {
 	mkdir('uploads');
 }
-
+//-------------------------------------------------------------------------------------
 //Main
 if (requestIsPost()) {
     if($_FILES['attachment']['error'][0] === 4){
@@ -79,21 +81,42 @@ if (requestIsPost()) {
 		}
 	}
 }
+//-------------------------------------------------------------------------------------
 //Delete picture
 if (get('action') == 'delete') {
     $filename = 'uploads/' . get('file');
     if(!file_exists($filename)){
         redirect('?msg=file%20not%20exists');
     }
-	unlink('uploads/' . get('file'));
+    $del_name = get('file');
+	unlink('uploads/' . $del_name);
+    $images = unserialize(file_get_contents(TITLES_FILE));
+    $result_arr = array();
+    foreach ($images as $picture_name => $picture_title) {
+        if($picture_name == $del_name){ continue; }
+        else{$result_arr[$picture_name] = $picture_title; }
+    }
+    file_put_contents(TITLES_FILE, serialize($result_arr));
+    deleteFromAlbums();
     redirect('?msg=Successfully%20deleted');
 }
-
-//Відкидаємо директорії "." i ".." зі списку файлів
-$files = scandir('uploads');
-array_shift($files);
-array_shift($files);
-$titles = unserialize(file_get_contents(TITLES_FILE));
+//-------------------------------------------------------------------------------------
+//Move pictures to albums
+if(get('move') !== null){
+    deleteFromAlbums(true);
+    redirect('?msg=Successfully%20moved');
+}
+//-------------------------------------------------------------------------------------
+//Show pictures in albums
+if(!get('show')){
+    $titles = unserialize(file_get_contents(TITLES_FILE));
+}
+else{
+    $album_name = get('show');
+    $albums = unserialize(file_get_contents(ALBUMS_FILE));
+    $titles = $albums[$album_name];
+}
+//-------------------------------------------------------------------------------------
 
 //-------HTML-LAYOUT-------------------------------
 require "layout.php";

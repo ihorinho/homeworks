@@ -23,6 +23,26 @@ function fileIsOfTypes(array $file)
     $allowed_types = ['image/jpeg', 'image/pjpeg', 'image/gif', 'image/png' ];
     return in_array($file['type'], $allowed_types);
 }
+
+//Видалення фотографії з альбому
+//Якщо передаємо $move=true, то файл буде стертий зі старого альбому, а потім записний в вибраний
+function deleteFromAlbums($move = false){
+    $get = $_GET;
+    $del_name = $get['file'];
+    $album_name = $get['move'];
+    $title = $get['title']; 
+    $albums = unserialize(file_get_contents(ALBUMS_FILE));
+    foreach ($albums as $album => $pictures) {
+        if(array_key_exists($del_name, $albums[$album])){
+            unset($albums[$album][$del_name]);
+        }       
+    }
+    if($move){
+        $albums[$album_name][$del_name] = $title;
+    }
+    file_put_contents(ALBUMS_FILE, serialize($albums));
+}
+
 //Виводимо на екран помилки, які були виявлені при завантаженні
 function printErrors($filename){
     $errors_ary = file($filename);
@@ -30,6 +50,7 @@ function printErrors($filename){
         echo "Error {$key}: " . $error_string . "<br>";
     }
 }
+
 //Виводимо повідомлення
 function flashMsg(){
     $msg = isset($_GET['msg']) ? $_GET['msg'] : null;
@@ -44,6 +65,7 @@ function flashMsg(){
     }
 }
 
+//Формуємо підпис до катринки
 function formTitle($name){
     $arr_name = explode('.', $name);
     array_pop($arr_name);
@@ -51,6 +73,7 @@ function formTitle($name){
     return $new_name;
 }
 
+//Обгортки для роботи з $_GET, $_POST, headers
 function post($key, $default = null)
 {
     return isset($_POST[$key]) ? $_POST[$key] : $default;

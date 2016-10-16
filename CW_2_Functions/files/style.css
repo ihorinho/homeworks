@@ -1,0 +1,83 @@
+/*GEneral styles*/
+body{
+	padding-bottom: 50px;
+}
+.container{
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	overflow: visible;
+}
+a{
+	text-decoration: none;
+}
+/*---------------------------------------*/
+/*Delete button*/
+.delete{
+	color: red;
+}
+
+.delete:hover{
+	border: 1px solid red;
+	color: #fff;
+	background-color: red;
+	border-radius: 3px;
+}
+/*---------------------------------------*/
+/*Show albums menu styles*/
+.show-album li{
+	display: inline-block;
+	font-size: 18px;
+	border: 1px solid black;
+	padding: 3px;
+	margin-right: 7px;
+	width: 80px;
+	text-align: center;
+}
+.show-album li a {
+	color: #000;
+	font-weight: bold;
+	display: block;
+}
+.show-album li:hover{
+	background-color: #EEE0E5;
+}
+/*---------------------------------------*/
+/*Move to album menu styles*/
+.menu{
+	height: 25px;
+}
+.image-menu{
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+.image-menu > li {
+	color: blue;
+}
+.sub-menu{
+	display: none;
+	position: absolute;
+	width: 80px;
+	left: -30px;
+}
+.image-menu, .sub-menu{
+	list-style: none;
+}
+.sub-menu li{
+	border: 1px solid #999;
+	padding: 0;
+}
+.sub-menu li:not(:first-child){
+	border-top: none;
+}
+.image-menu > li:hover .sub-menu,
+.sub-menu li a{
+	display: block;
+}
+.sub-menu li:hover a{
+	background-color: #999;
+	color: #fff;
+}

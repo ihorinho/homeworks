@@ -2,27 +2,18 @@
 <html>
 	<head>
 		<title>Gallery</title>
-		<style>
-			div{
-				display: inline-block;
-				text-align: center;
-				margin-bottom: 15px;
-				margin-right: 10px;
-			}
-			div a {
-				text-decoration: none;
-			}
-			div a:hover{
-				border: 1px solid red;
-				color: #fff;
-				background-color: red;
-				border-radius: 3px;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
     <?= flashMsg()?>
 		<h2>Gallery</h2>
+		
+		<h3>Show album:</h3>
+		<ul class = "show-album">
+			<li><a href="index.php">All</a></li>
+			<li><a href="?show=nature">Nature</a></li>
+			<li><a href="?show=animals">Animals</a></li>
+		</ul>
 
 		<hr>
 
@@ -35,13 +26,29 @@
 		</form>
 <hr>
 
-<?php foreach ($files as $file) : ?>
-	<div>
-    <img width=<?=PICTURE_WIDTH?> src='uploads/<?=$file?>' width='100' alt="<?=$file?>"><br>
-	<?=$titles[$file]?>
-    <a href="?action=delete&amp;file=<?=$file?>">		Delete
-    </a></div>
-<?php endforeach;?>
+<?php if($titles){
+
+	foreach ($titles as $file => $title) : ?>
+	<div class="container">
+		<div>
+		    <img width=<?=PICTURE_WIDTH?> src='uploads/<?=$file?>' width='100' alt="<?=$title?>"><br>
+			<?=$title?><br>
+		    
+	    </div>
+	    <div class="menu">
+	    <a class="delete" href="?action=delete&amp;file=<?=$file?>">Delete</a>
+	    	 <ul class="image-menu">
+		    	<li>Move to album
+		    		<ul class="sub-menu">
+		    			<li><a href="?move=nature&file=<?=$file?>&title=<?=$title?>">Nature</a></li>
+		    			<li><a href="?move=animals&file=<?=$file?>&title=<?=$title?>">Animals</a></li>
+		    		</ul>
+		    	</li>
+		    </ul>
+	    </div>
+    </div>
+   
+<?php endforeach; }?>
 
 </body>
 </html>
