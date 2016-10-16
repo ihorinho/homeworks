@@ -14,11 +14,13 @@
 <form method='post'>
     <div class="form-group">
         <label for="username">Name:</label>
-        <input type='text' class="form-control" name='username' id="username" autofocus ='<?= post('username') ?>'> <br>
+        <input type='text' class="form-control" name='username' id="username" autofocus value="<?= post('username') ?>"> <br>
         <label for="email">Email:</label>
         <input type='email' class="form-control" name='email' id="email" value="<?= post('email') ?>"> <br>
         <label for="message">Message:</label>
         <textarea class="form-control" name='message' id='message'><?= post('message') ?></textarea><br>
+        <img src="security.png" alt="Captcha">
+        <input type="text" name="captcha">
         <div class="checkbox">
             <label>
                 <input type='checkbox' id='publish' name='publish'>
@@ -33,13 +35,14 @@
 <div class="comments">
     <?php foreach ($comments as $comment) : ?>
         <b><?=$comment['username']?></b> <?=$comment['datetime'] . " Рейтинг: " . $comment['rating'] . " "?>
-        <a href="?action=update_rating&rating=increase&id=<?=$comment["id"]?>">+</a>/
-        <a href="?action=update_rating&rating=decrease&id=<?=$comment["id"]?>">-</a><br>
+        <a href="?action=update_rating&amp;rating=increase&amp;id=<?=$comment["id"]?>">+</a>/
+        <a href="?action=update_rating&amp;rating=decrease&amp;id=<?=$comment["id"]?>">-</a><br>
         <?php echo isset($comment['publish']) ? "<i> e-mail: " . $comment['email'] . "</i><br>" : null  ?>
-        <?=$comment['message']?><br><a class="btn btn-danger btn-sm" href="?action=delete&id=<?=$comment["id"]?>">Delete</a>
+        <?=$comment['message']?><br><a class="btn btn-danger btn-sm" href="?action=delete&amp;id=<?=$comment["id"]?>">Delete</a>
         <br><br>
     <?php endforeach;?>
 </div>
+
 
 </body>
 </html>

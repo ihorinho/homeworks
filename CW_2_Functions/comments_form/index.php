@@ -1,6 +1,8 @@
 <?php
 define('COMMENTS_DB', 'comments.txt');
 require 'functions.php';
+require 'captcha.php';
+session_start();
 
 $flashMsg = get('flashMsg');
 
@@ -33,7 +35,9 @@ if(get('action') == 'delete'){
 	deleteComment($delete_id);
 	redirect("index.php");
 }
-
+//Число для каптчі в сесію
+$_SESSION['captcha'] = rand(111111, 999999);
+captcha();
 $comments = loadComments();
 moderate($comments);
 

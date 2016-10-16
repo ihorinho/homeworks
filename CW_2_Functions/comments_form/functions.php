@@ -21,11 +21,16 @@ function requestIsPost()
 	return (bool)($_SERVER['REQUEST_METHOD'] == 'POST');
 }
 
+function redirect($to){
+	header("Location: $to");
+}
+
 function formIsValid()
 {
 	return 	post('username') != '' && 
 			post('email') !='' && 
-			post('message') != '';
+			post('message') != '' &&
+			$_SESSION['captcha'] == post('captcha');
 }
 
 
