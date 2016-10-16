@@ -9,7 +9,7 @@
 </head>
 <ul>
     <li><a href="comments_form/">Форма з коментаріями</a></li>
-    <li><a href="files">Галерея</a></li>
+    <li><a href="gallery">Галерея</a></li>
     <li><a href="myCount.php">count() через each()</a></li>
     <li><a href="myCount2.php">count() через each() + while</a></li>
     <li><a href="myPrint_R.php">print_r() через each()</a></li>
